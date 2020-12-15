@@ -24,6 +24,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 <link rel="lazy-import" href="login-page.html">
 <link rel="lazy-import" href="message-page.html">
+<link rel="lazy-import" href="product-page.html">
 <link rel="lazy-import" href="about-page.html">
 <link rel="lazy-import" href="my-view404.html">
 
@@ -88,6 +89,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <a name="login-page" href="[[rootPath]]login-page">Login</a>
           <a name="message-page" href="[[rootPath]]message-page">Message</a>
           <a name="about-page" href="[[rootPath]]about-page">About</a>
+          <a name="product" href="[[rootPath]]product-page">My Product</a>
         </iron-selector>
       </app-drawer>
 
@@ -109,6 +111,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <login-page is-admin="{{isAdmin}}" name="login-page"></login-page>
           <message-page is-admin="{{isAdmin}}" name="message-page"></message-page>
           <about-page name="about-page"></about-page>
+          <product-page name="product-page"></product-page>
           <my-view404 name="view404"></my-view404>
         </iron-pages>
       </app-header-layout>
@@ -139,6 +142,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             type: Boolean,
             notify: true
           }
+          
         };
       }
 
